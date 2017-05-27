@@ -47,7 +47,7 @@ public class GreetingBatchBeen {
         logger.info("< fixedRateJobWithInitialDelay");
     }
 
-    @Scheduled(initialDelay = 5000 , fixedDelay = 15000)
+    /*@Scheduled(initialDelay = 5000 , fixedDelay = 15000)*/
     public void fixedDelayJobWithInitialDelay(){
         logger.info("> fixedRateJobWithInitialDelay");
 
