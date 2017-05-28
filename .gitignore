@@ -2,5 +2,4 @@
 .gitignore
 .idea/vcs.xml
 .idea/workspace.xml
-src/test/
 target/
