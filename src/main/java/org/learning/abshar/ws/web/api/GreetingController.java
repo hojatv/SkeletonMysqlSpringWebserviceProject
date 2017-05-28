@@ -22,7 +22,7 @@ import java.util.concurrent.Future;
  * Created by Dell on 5/21/2017.
  */
 @RestController
-public class GreetingController {
+public class GreetingController extends BaseController {
 
     @Autowired
     private GreetingService service;
