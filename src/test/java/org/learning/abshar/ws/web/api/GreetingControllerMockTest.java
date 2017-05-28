@@ -50,7 +50,7 @@ public class GreetingControllerMockTest extends AbstractControllerTest {
 
     @Before
     public void setup() {
-        //Mokito searches for annotations and prepare them
+        //Mockito searches for annotations and prepare them
         MockitoAnnotations.initMocks(this);
 
         setup(greetingController);

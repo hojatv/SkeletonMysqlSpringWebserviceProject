@@ -23,6 +23,7 @@ public class AbstractControllerTest extends AbstractTest {
     }
 
     protected void setup(BaseController controller) {
+        //For Mockito we don't need to use whole WebApplicationContext
         mvc = MockMvcBuilders.standaloneSetup(controller).build();
 
     }
