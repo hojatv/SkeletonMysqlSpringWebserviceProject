@@ -29,7 +29,6 @@ public class GreetingController extends BaseController {
 
     @Autowired
     private EmailService emailService;
-    private Logger logger = LoggerFactory.getLogger(GreetingController.class);
 
     @RequestMapping(value = "/api/greetings",
             method = RequestMethod.GET,

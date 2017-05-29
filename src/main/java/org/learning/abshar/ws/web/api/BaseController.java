@@ -12,10 +12,9 @@ import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
-/**
- * Created by Dell on 5/28/2017.
- */
+/*Controller Class Hierarchies*/
 public class BaseController {
+
 
     /**
      * The Logger for this class.

@@ -32,7 +32,7 @@ import java.util.Map;
  * @see ExceptionAttributes
  *
  */
-public class DefaultExceptionAttributes implements ExceptionAttributes {
+public class  DefaultExceptionAttributes implements ExceptionAttributes {
 
     /**
      * The timestamp attribute key.

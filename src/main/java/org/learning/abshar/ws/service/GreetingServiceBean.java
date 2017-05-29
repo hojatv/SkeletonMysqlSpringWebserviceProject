@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.NoResultException;
 import java.math.BigInteger;
 import java.util.Collection;
 import java.util.HashMap;
@@ -64,6 +65,9 @@ public class GreetingServiceBean implements GreetingService {
     public Greeting update(Greeting greeting) {
         counterService.increment("method.invoked.greetingServiceBean.update");
         Greeting greetingPersisted = repository.findOne(greeting.getId());
+        if (greetingPersisted.getId() == 4L) {
+            throw new NoResultException("No result for id 4");
+        }
         if (greetingPersisted == null) {
             return null;
         }
